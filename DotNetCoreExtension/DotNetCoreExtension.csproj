@@ -10,7 +10,7 @@
     <Authors>Tran Minh Sang</Authors>
     <Company>minhsangdotcom</Company>
     <PackageTags>csharp, nuget, extensions, code base, dotnet</PackageTags>
-    <RepositoryUrl>https://github.com/minhsangdotcom/the-template_shared-kernel</RepositoryUrl>
+    <RepositoryUrl>https://github.com/minhsangdotcom/aspnetcore-extensions</RepositoryUrl>
     <PackageReadmeFile>README-NUGET.md</PackageReadmeFile>
   </PropertyGroup>
 
@@ -19,6 +19,7 @@
     <PackageReference Include="deniszykov.TypeConversion" Version="3.2.3" />
     <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="8.0.21" />
     <PackageReference Include="Ulid" Version="1.4.1" />
+    <None Include="../README-NUGET.md" Pack="true" PackagePath="" />
   </ItemGroup>
-
+  
 </Project>
