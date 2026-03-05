@@ -214,6 +214,14 @@ public static class ExpressionExtension
         Expression nullCheckExpression
     )
     {
+        Type type = propertyValue.Type;
+
+        // Skip null check only for non-nullable value types, always check for reference types
+        bool cannotBeNull = type.IsValueType && Nullable.GetUnderlyingType(type) == null;
+        if (cannotBeNull)
+        {
+            return nullCheckExpression ?? Expression.Constant(true);
+        }
         Expression notExpression = Expression.Not(
             Expression.Equal(propertyValue, Expression.Constant(null, propertyValue.Type))
         );
