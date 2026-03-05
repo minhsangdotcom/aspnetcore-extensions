@@ -5,10 +5,10 @@
     <Nullable>enable</Nullable>
 
     <PackageId>TranMinhSang.AspNetCore.Extensions</PackageId>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Authors>Tran Minh Sang</Authors>
     <Company>minhsangdotcom</Company>
-    <PackageTags>csharp, nuget, extensions, code base, dotnet</PackageTags>
+    <PackageTags>csharp, nuget, extensions, code base, dotnet, Utility Functions, Utils</PackageTags>
     <RepositoryUrl>https://github.com/minhsangdotcom/aspnetcore-extensions</RepositoryUrl>
     <PackageReadmeFile>README-NUGET.md</PackageReadmeFile>
   </PropertyGroup>
